@@ -36,6 +36,7 @@ mcs poppassd.cs -r:Mono.Posix.dll -r:System.Configuration.dll -debug
 Copy generated executable and symbols file to /usr/sbin and also copy poppassd.exe.config there. You might need to edit the config if doveadm is located in non-standard location. Also change shadowPath setting to point to your dovecot passdb file.
 ```
 cp poppassd.exe /usr/sbin
+cp poppassd.exe.mdb /usr/sbin
 cp poppassd.exe.config /usr/sbin
 ```
 That's it. You might need to cycle inetd. Use poppassd plugin for RainLoop with default settings and you should be up and running. As with standard poppassd make sure that it's not possible to access the service from elsewhere because passwords are transmitted unencrypted. (So you should really use localhost only and make sure you can't connect to it from anywhere else.)
