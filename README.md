@@ -40,3 +40,5 @@ cp poppassd.exe.mdb /usr/sbin
 cp poppassd.exe.config /usr/sbin
 ```
 That's it. You might need to cycle inetd. Use poppassd plugin for RainLoop with default settings and you should be up and running. As with standard poppassd make sure that it's not possible to access the service from elsewhere because passwords are transmitted unencrypted. (So you should really use localhost only and make sure you can't connect to it from anywhere else.)
+
+Note that erros are logged to syslog with "cli:" prefix.
