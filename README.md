@@ -15,7 +15,7 @@ Install the following packages:
 ```
 sudo apt-get install build-essential mono-complete poppassd
 ```
-This installs the dev environment but also the standard poppassd. I chose this way because poppassd package wires up to inetd, start in reboot, etc the things that I have very vague idea how to set up properly. So I realy on this package to set them up for me.
+This installs the dev environment but also the standard poppassd. I chose this way because poppassd package wires up to inetd, start on reboot, etc the things that I have very vague idea how to set up properly. So I rely on this package to set them up for me.
 
 As root compile poppassd.c:
 ```
