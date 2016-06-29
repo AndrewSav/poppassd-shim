@@ -7,12 +7,13 @@
 
 main(int argc, char *argv[]) {
 
-        char* newarg[3];
+  char* newarg[4];
 	newarg[0] = CMD;
 	newarg[1] = "--debug";
 	newarg[2] = EXE;
-        if (execv(CMD, newarg) == 0) {
-                return 1;
-        }
-        return 0;
+	newarg[3] = NULL;
+  if (execv(CMD, newarg) == 0) {
+    return 1;
+  }
+  return 0;
 }

@@ -25,7 +25,7 @@ You might want to edit the constant at the top of poppassd.c if mono is not inst
 
 As root copy compiled poppassd to /usr/sbin/poppassd to replace the standard one:
 ```
-mv /usr/sbin/poppassd /usr/bin/poppassd.old
+mv /usr/sbin/poppassd /usr/sbin/poppassd.old
 cp poppassd /usr/sbin
 ```
 
