@@ -169,7 +169,7 @@ namespace poppassd
                     if (line.ToLowerInvariant().StartsWith(user + ":"))
                     {
                         done = true;
-                        outLines.Add(user + ":" + hash);
+                        outLines.Add(user + ":" + hash.Trim(Environment.NewLine.ToCharArray()));
                     }
                     else
                     {
